@@ -1,0 +1,30 @@
+{
+  "name": "apirest",
+  "version": "0.0.1",
+  "description": "ApiRest generado en el bootcamp02",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "apirest",
+    "nodejs",
+    "sequelize",
+    "express"
+  ],
+  "author": "BootCamp02",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.5.3",
+    "nodemon": "^1.17.3",
+    "sequelize": "^4.37.6"
+  }
+}
