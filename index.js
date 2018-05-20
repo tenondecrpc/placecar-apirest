@@ -4,7 +4,7 @@ var cors = require('cors');
 var morgan = require('morgan');
 var methodOverride = require('method-override');
 var compression = require('compression');
-var routes = require('./routes');
+var fs = require('fs');
 var app = express();
 
 // parse application/x-www-form-urlencoded
@@ -20,11 +20,19 @@ app.use(morgan('dev'));
 // enable all CORS requests
 app.use(cors());
 // App routes
-app.use(routes(express.Router()));
-// Static files
+fs
+  .readdirSync(__dirname + "/models")
+  .filter(file => {
+    return (file.indexOf('.') !== 0) && (file.slice(-3) === '.js' && file !== 'index.js');
+  })
+  .forEach(file => {
+    var model = require('./routes/' + file);
+    app.use(model(express.Router()));
+  });
+// Static files 
 app.use(express.static(__dirname + '/'));
 // Models of the server
-var models = require('./models');
+var models = require('./models/');
 
 models.sequelize
     .authenticate()
@@ -38,5 +46,5 @@ models.sequelize
 // Listen server
 app.set('port', process.env.PORT || 3000);
 app.listen(app.get('port'), function() {
-    console.log('Servidor web en http://localhost:3000');
+    console.log('Server listen on http://localhost:3000');
 });

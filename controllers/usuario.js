@@ -1,7 +1,7 @@
 Usuario = require('../models').Usuario;
 
 module.exports = {
-    //Get a list of all usuarios using model.findAll()
+    //Get all
     index(req, res) {
         Usuario.findAll()
         .then(function(result) {
@@ -11,7 +11,7 @@ module.exports = {
             res.status(500).json(err);
         });
     },
-    //Get an usuario by the unique ID using model.findById()
+    //Get by id
     show(req, res) {
         Usuario.findById(req.params.id)
         .then(function(result) {
@@ -21,7 +21,7 @@ module.exports = {
             res.status(500).json(err);
         });
     },
-    //Create a new usuario using model.create()
+    //Create
     create(req, res) {
         Usuario.create(req.body)
         .then(function(result) {
@@ -31,7 +31,7 @@ module.exports = {
             res.status(500).json(err);
         });
     },
-    //Edit an existing usuario details using model.update()
+    //Edit
     update(req, res) {
         Usuario.update(req.body, {
             where: {
@@ -45,7 +45,7 @@ module.exports = {
             res.status(500).json(err);
         });
     },
-    //Delete an existing usuario by the unique ID using model.destroy()
+    //Delete
     delete(req, res) {
         Usuario.destroy({
             where: {
