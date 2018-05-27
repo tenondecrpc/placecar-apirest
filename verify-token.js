@@ -1,6 +1,6 @@
 var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
 var env       = process.env.NODE_ENV || 'development';
-var config    = require(__dirname + '/../config/config.json')[env];
+var config    = require(__dirname + '/config/config.json')[env];
 
 function verifyToken(req, res, next) {
 
