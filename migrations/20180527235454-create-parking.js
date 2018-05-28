@@ -6,7 +6,7 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER(10)
       },
       name: {
         allowNull: false,
@@ -23,7 +23,7 @@ module.exports = {
       },
       cityId: {
         allowNull: false,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER(10)
       },
       latitude: {
         type: Sequelize.STRING(50)
