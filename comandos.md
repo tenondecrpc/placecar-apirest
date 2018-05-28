@@ -1,3 +1,5 @@
+COMANDOS DE GENERACIÓN DE MODELOS Y MIGRACIONES
+
 //Generation of model/migration for user
 sequelize model:generate --name User --attributes name:string,email:string,password:string,phone:string,photUrl:string,role:integer
 
@@ -9,3 +11,6 @@ sequelize model:generate --name Parking --attributes name:string,description:tex
 
 //Generation of model/migration for reservation
 sequelize model:generate --name Reservation --attributes parkingId:integer,userId:integer,price:decimal,timeStamp:timestamp
+
+
+//COMANDOS PARA CREACIÓN DE VARIABLES GLOBALES EN NODEJS
