@@ -23,6 +23,7 @@ module.exports = {
       },
       cityId: {
         allowNull: false,
+        field: 'city_id',
         type: Sequelize.INTEGER(10)
       },
       latitude: {

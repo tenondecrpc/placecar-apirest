@@ -31,7 +31,7 @@ module.exports = {
         type: Sequelize.STRING(255)
       },
       role: {
-        default: 1,
+        defaultValue: 1,
         type: Sequelize.INTEGER(10)
       }
     });

@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     price: DataTypes.DECIMAL,
     timeStamp: {
       field: 'time_stamp',
-      type: DataTypes.NOW
+      type: DataTypes.DATE
     },
   }, 
   {

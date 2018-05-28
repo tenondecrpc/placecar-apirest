@@ -14,7 +14,7 @@ module.exports = {
         type: Sequelize.INTEGER(10)
       },
       userId: {
-        field: "user_id",
+        field: 'user_id',
         allowNull: false,
         type: Sequelize.INTEGER(10)
       },
@@ -23,8 +23,11 @@ module.exports = {
         type: Sequelize.DECIMAL(20,2)
       },
       timeStamp: {
+        allowNull: false,
+        // defaultValue: Sequelize.NOW,//Bug
+        defaultValue: Sequelize.fn('NOW'),//Only for MySQL
         field: 'time_stamp',
-        type: Sequelize.NOW
+        type: Sequelize.DATE
       }
     });
   },
