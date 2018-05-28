@@ -5,12 +5,8 @@ module.exports = (sequelize, DataTypes) => {
   }, 
   {
     timestamps: false,
-    // paranoid: false,
-    // underscored: true,
     tableName: 'cities'
   });
-  City.associate = function(models) {
-    // associations can be defined here
-  };
+  City.associate = function(models) {};
   return City;
 };
