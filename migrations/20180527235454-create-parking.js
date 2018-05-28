@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.STRING(50)
       },
       description: {
-        type: Sequelize.TEXT
+        type: Sequelize.TEXT('tiny')
       },
       document: {
         type: Sequelize.STRING(50)

@@ -24,7 +24,7 @@ module.exports = {
       },
       timeStamp: {
         field: 'time_stamp',
-        type: Sequelize.DATE
+        type: Sequelize.NOW
       }
     });
   },

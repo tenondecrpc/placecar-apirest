@@ -14,7 +14,8 @@ module.exports = {
       },
       email: {
         allowNull: false,
-        type: Sequelize.STRING(50)
+        type: Sequelize.STRING(50),
+        unique: true
       },
       password: {
         allowNull: false,
@@ -22,7 +23,8 @@ module.exports = {
       },
       phone: {
         allowNull: false,
-        type: Sequelize.STRING(50)
+        type: Sequelize.STRING(50),
+        unique: true
       },
       photoUrl: {
         field: "photo_url",
