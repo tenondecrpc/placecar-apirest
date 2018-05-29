@@ -3,21 +3,21 @@ module.exports = (sequelize, DataTypes) => {
   var Reservation = sequelize.define('Reservation', {
     parkingId: {
       field: 'parking_id',
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
     },
     userId: {
       field: 'user_id',
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
     },
     price: DataTypes.DECIMAL,
     timeStamp: {
       field: 'time_stamp',
-      type: DataTypes.DATE
+      type: DataTypes.DATE,
     },
   }, 
   {
     timestamps: false,
-    tableName: 'reservations'
+    tableName: 'reservations',
   });
   Reservation.associate = function(models) {};
   return Reservation;

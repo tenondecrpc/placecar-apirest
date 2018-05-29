@@ -6,31 +6,31 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER(10)
+        type: Sequelize.INTEGER(10),
       },
       name: {
         allowNull: false,
-        type: Sequelize.STRING(50)
+        type: Sequelize.STRING(50),
       },
       description: {
-        type: Sequelize.TEXT('tiny')
+        type: Sequelize.TEXT('long'),
       },
       document: {
-        type: Sequelize.STRING(50)
+        type: Sequelize.STRING(50),
       },
       owner: {
-        type: Sequelize.STRING(50)
+        type: Sequelize.STRING(50),
       },
       cityId: {
         allowNull: false,
         field: 'city_id',
-        type: Sequelize.INTEGER(10)
+        type: Sequelize.INTEGER(10),
       },
       latitude: {
-        type: Sequelize.STRING(50)
+        type: Sequelize.STRING(50),
       },
       longitude: {
-        type: Sequelize.STRING(50)
+        type: Sequelize.STRING(50),
       }
     });
   },

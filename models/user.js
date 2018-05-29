@@ -7,15 +7,15 @@ module.exports = (sequelize, DataTypes) => {
     phone: DataTypes.STRING,
     photoUrl: {
       field: 'photo_url',
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
     },
-    role: DataTypes.INTEGER
+    role: DataTypes.INTEGER,
   }, 
   {
     timestamps: false,
     // paranoid: false,
     // underscored: true,
-    tableName: 'users'
+    tableName: 'users',
   });
   User.associate = function(models) {
     // associations can be defined here

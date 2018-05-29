@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var ParkingRating = sequelize.define('ParkingRating', {
+  var ParkingComment = sequelize.define('ParkingComment', {
     parkingId: {
       field: 'parking_id',
       type: DataTypes.INTEGER,
@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
       field: 'user_id',
       type: DataTypes.INTEGER,
     },
-    rating: DataTypes.DECIMAL,
+    comment: DataTypes.TEXT,
     timeStamp: {
       field: 'time_stamp',
       type: DataTypes.DATE,
@@ -17,8 +17,8 @@ module.exports = (sequelize, DataTypes) => {
   }, 
   {
     timestamps: false,
-    tableName: 'parkings_ratings',
+    tableName: 'parkings_comments',
   });
-  ParkingRating.associate = function(models) {};
-  return ParkingRating;
+  ParkingComment.associate = function(models) {};
+  return ParkingComment;
 };

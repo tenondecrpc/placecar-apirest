@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('parkings_prices', {
+    return queryInterface.createTable('parkings_comments', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -13,18 +13,24 @@ module.exports = {
         field: 'parking_id',
         type: Sequelize.INTEGER(10),
       },
-      price: {
+      userId: {
         allowNull: false,
-        type: Sequelize.DECIMAL(20,2),
+        field: 'user_id',
+        type: Sequelize.INTEGER(10),
       },
-      quantityHour: {
+      comment: {
         allowNull: false,
-        field: 'quantity_hour',
-        type: Sequelize.DECIMAL(20,2),
-      }
+        type: Sequelize.TEXT('long'),
+      },
+      timeStamp: {
+        allowNull: false,
+        defaultValue: Sequelize.fn('NOW'),
+        field: 'time_stamp',
+        type: Sequelize.DATE,
+      },
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('parkings_prices');
+    return queryInterface.dropTable('parkings_comments');
   }
 };

@@ -7,14 +7,14 @@ module.exports = (sequelize, DataTypes) => {
     owner: DataTypes.STRING,
     cityId:  {
       field: 'city_id',
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
     },
     latitude: DataTypes.STRING,
-    longitude: DataTypes.STRING
+    longitude: DataTypes.STRING,
   }, 
   {
     timestamps: false,
-    tableName: 'parkings'
+    tableName: 'parkings',
   });
   Parking.associate = function(models) {};
   return Parking;

@@ -6,27 +6,27 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER(10)
+        type: Sequelize.INTEGER(10),
       },
       parkingId: {
         allowNull: false,
         field: 'parking_id',
-        type: Sequelize.INTEGER(10)
+        type: Sequelize.INTEGER(10),
       },
       userId: {
         allowNull: false,
         field: 'user_id',
-        type: Sequelize.INTEGER(10)
+        type: Sequelize.INTEGER(10),
       },
       rating: {
         allowNull: false,
-        type: Sequelize.DECIMAL(20,2)
+        type: Sequelize.DECIMAL(20,2),
       },
       timeStamp: {
         allowNull: false,
         defaultValue: Sequelize.fn('NOW'),
         field: 'time_stamp',
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       }
     });
   },

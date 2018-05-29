@@ -18,5 +18,7 @@ sequelize model:generate --name ParkingPrice --attributes parkingId:integer,pric
 //Generation of model/migration for parkings ratings
 sequelize model:generate --name ParkingRating --attributes parkingId:integer,userId:integer,rating:decimal,timeStamp:date
 
+//Generation of model/migration for parkings comments
+sequelize model:generate --name ParkingComment --attributes parkingId:integer,userId:integer,comment:text,timeStamp:date
 
 //COMANDOS PARA CREACIÓN DE VARIABLES GLOBALES EN NODEJS
