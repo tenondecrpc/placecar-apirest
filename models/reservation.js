@@ -19,8 +19,6 @@ module.exports = (sequelize, DataTypes) => {
     timestamps: false,
     tableName: 'reservations'
   });
-  Reservation.associate = function(models) {
-    
-  };
+  Reservation.associate = function(models) {};
   return Reservation;
 };
