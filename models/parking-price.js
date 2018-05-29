@@ -6,7 +6,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER
     },
     price: DataTypes.DECIMAL,
-    quantityHour: DataTypes.DECIMAL
+    quantityHour: {
+      field: 'quantity_hour',
+      type: DataTypes.DECIMAL
+    }
   }, 
   {
     timestamps: false,
