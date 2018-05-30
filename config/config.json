@@ -21,7 +21,7 @@
     "username": "placecar#2018",
     "password": "placecar#2018",
     "database": "placecar",
-    "host": "35.199.73.109",
+    "host": "35.184.247.52",
     "port": "3306",
     "dialect": "mysql",
     "secret": "secret"
