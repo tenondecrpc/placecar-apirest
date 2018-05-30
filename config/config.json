@@ -4,6 +4,7 @@
     "password": "admin",
     "database": "database_development",
     "host": "127.0.0.1",
+    "port": "3306",
     "dialect": "mysql",
     "secret": "secret"
   },
@@ -12,14 +13,16 @@
     "password": null,
     "database": "database_test",
     "host": "127.0.0.1",
+    "port": "3306",
     "dialect": "mysql",
     "secret": "secret"
   },
   "production": {
-    "username": "root",
-    "password": "admin",
-    "database": "database_production",
-    "host": "35.184.247.52",
+    "username": "placecar#2018",
+    "password": "placecar#2018",
+    "database": "placecar",
+    "host": "35.199.73.109",
+    "port": "3306",
     "dialect": "mysql",
     "secret": "secret"
   }
