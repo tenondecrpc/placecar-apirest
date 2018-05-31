@@ -1,4 +1,4 @@
-COMANDOS DE GENERACIÓN DE MODELOS Y MIGRACIONES
+MODEL AND MIGRATION GENERATION COMMANDS
 
 //Generation of model/migration for user
 sequelize model:generate --name User --attributes name:string,email:string,password:string,phone:string,photUrl:string,role:integer
@@ -24,4 +24,8 @@ sequelize model:generate --name ParkingComment --attributes parkingId:integer,us
 //Generation of model/migration for parkings images
 sequelize model:generate --name ParkingImage --attributes parkingId:integer,imageUrl:string
 
-//COMANDOS PARA CREACIÓN DE VARIABLES GLOBALES EN NODEJS
+//OTHER COMMANDS SEQUELIZE
+sequelize db:migrate --env production 
+
+//COMMANDS FOR THE CREATION OF GLOBAL VARIABLES IN NODEJS
+
