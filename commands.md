@@ -1,3 +1,13 @@
+INSTALLATION NODEJS
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+INSTALLATION GIT
+sudo apt-get install git
+
+INSTALLATION MYSQL
+Mediante GoogleCloud
+
 MODEL AND MIGRATION GENERATION COMMANDS
 
 //Generation of model/migration for user
@@ -24,10 +34,13 @@ sequelize model:generate --name ParkingComment --attributes parkingId:integer,us
 //Generation of model/migration for parkings images
 sequelize model:generate --name ParkingImage --attributes parkingId:integer,imageUrl:string
 
-//OTHER COMMANDS SEQUELIZE
+OTHER COMMANDS SEQUELIZE
 sequelize db:migrate --env production 
 
-//COMMANDS FOR THE CREATION OF GLOBAL VARIABLES IN NODEJS
+COMMANDS FOR THE CREATION OF GLOBAL VARIABLES IN NODEJS
+//Location
+sudo nano /etc/profile
+//Commands
 export username=root
 export password=admin
 export host=localhost
@@ -38,5 +51,5 @@ export use_env_variable=true
 export secret=secret
 export PORT=3000
 export NODE_ENV=development
-//USE
+//Use on nodejs api
 process.env.PORT
