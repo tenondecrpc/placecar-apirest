@@ -28,4 +28,15 @@ sequelize model:generate --name ParkingImage --attributes parkingId:integer,imag
 sequelize db:migrate --env production 
 
 //COMMANDS FOR THE CREATION OF GLOBAL VARIABLES IN NODEJS
-
+export username=root
+export password=admin
+export host=localhost
+export dialect=mysql
+export database=database_development
+export port_db=3306
+export use_env_variable=true
+export secret=secret
+export PORT=3000
+export NODE_ENV=development
+//USE
+process.env.PORT
