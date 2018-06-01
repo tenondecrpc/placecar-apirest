@@ -51,5 +51,13 @@ export use_env_variable=true
 export secret=secret
 export PORT=3000
 export NODE_ENV=development
-//Use on nodejs api
+//Usage on nodejs api
 process.env.PORT
+//INSTALL AS A SERVICE
+npm install -g forever forever-service
+sudo forever-service install placecar-api --script index.js -e "NODE_ENV=production PORT=3000" --start
+*/Commands to interact with service placecar-api
+Start   - "sudo service placecar-api start"
+Stop    - "sudo service placecar-api stop"
+Status  - "sudo service placecar-api status"
+Restart - "sudo service placecar-api restart"*/
