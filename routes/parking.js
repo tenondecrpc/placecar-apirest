@@ -7,6 +7,8 @@ module.exports = function(router) {
     router.post('/parkings', verifyToken, parking.create);
     router.put('/parkings/:id', verifyToken, parking.update);
     router.delete('/parkings/:id', verifyToken, parking.delete);
+
+    router.get('/parkings/city/:id', verifyToken, parking.findAllByCity);
     
     return router;
 };

@@ -1,4 +1,5 @@
 Parking = require('../models').Parking;
+City = require('../models').City;
 var jwt = require('jsonwebtoken');
 var env       = process.env.NODE_ENV || 'development';
 var config    = require(__dirname + '/../config/config.json')[env];
@@ -53,6 +54,20 @@ module.exports = {
         Parking.destroy({
             where: {
                 id: req.params.id
+            }
+        })
+        .then(function(result) {
+            res.status(200).json(result);
+        })
+        .catch(function(err) {
+            res.status(500).json(err);
+        });
+    },
+    //Get all by City
+    findAllByCity(req, res) {
+        Parking.findAll({
+            where: {
+              cityId: req.params.id
             }
         })
         .then(function(result) {
