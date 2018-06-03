@@ -9,6 +9,7 @@ module.exports = function(router) {
     router.delete('/parkings/:id', verifyToken, parking.delete);
 
     router.get('/parkings/city/:id', verifyToken, parking.findAllByCity);
+    router.get('/parkings/:id/details', verifyToken, parking.findAllDetails);
     
     return router;
 };
