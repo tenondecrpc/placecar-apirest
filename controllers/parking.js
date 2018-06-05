@@ -84,30 +84,30 @@ module.exports = {
     //Get all detail
     
     findAllDetails(req, res) {
-        Parking.hasMany(ParkingImage, {foreignKey: 'parking_id', as:'ParkingImages'});
+        Parking.hasMany(ParkingImage, {foreignKey: 'parking_id'});
         // ParkingImage.belongsTo(Parking, {foreignKey: 'parking_id', as:'ParkingImages'});
-        Parking.hasMany(ParkingPrice, {foreignKey: 'parking_id', as:'ParkingPrices'});
-        Parking.hasMany(ParkingComment, {foreignKey: 'parking_id', as:'ParkingComments'});
-        Parking.hasMany(ParkingRating, {foreignKey: 'parking_id', as:'ParkingRatings'});
+        Parking.hasMany(ParkingPrice, {foreignKey: 'parking_id'});
+        Parking.hasMany(ParkingComment, {foreignKey: 'parking_id'});
+        Parking.hasMany(ParkingRating, {foreignKey: 'parking_id'});
         Parking.findAll({
             include: [
                 {
                     model: ParkingImage,
-                    as: 'ParkingImages',
+                    // as: 'ParkingImages',
                     // where: { parkingId: req.params.id },
                     // required: true,
                 },
                 {
                     model: ParkingPrice,
-                    as: 'ParkingPrices',
+                    // as: 'ParkingPrices',
                 },
                 {
                     model: ParkingComment,
-                    as: 'ParkingComments',
+                    // as: 'ParkingComments',
                 },
                 {
                     model: ParkingRating,
-                    as: 'ParkingRatings',
+                    // as: 'ParkingRatings',
                 },
             ],
             //Remove where you want to bring the list of all objects

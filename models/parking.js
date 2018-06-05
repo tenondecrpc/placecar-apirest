@@ -16,6 +16,11 @@ module.exports = (sequelize, DataTypes) => {
     timestamps: false,
     tableName: 'parkings',
   });
-  Parking.associate = function(models) {};
+  Parking.associate = function(models) {
+    // Parking.hasMany(models.ParkingImage, { 
+    //   through: 'ParkingImage',
+    //   foreignKey: 'parking_id'
+    //  })
+  };
   return Parking;
 };
