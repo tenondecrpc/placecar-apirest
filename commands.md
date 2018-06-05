@@ -61,3 +61,9 @@ Start   - "sudo service placecar-api start"
 Stop    - "sudo service placecar-api stop"
 Status  - "sudo service placecar-api status"
 Restart - "sudo service placecar-api restart"*/
+
+CONNECTION SSH
+create: ssh-keygen -t rsa -f ~/.ssh/placecar-ssh-key -C premiumsystemspy
+view: cat ~/.ssh/placecar-ssh-key
+falta la forma de cargar en google cloud la clave
+access remote: ssh -i ~/.ssh/placecar-ssh-key premiumsystemspy@35.199.67.158
