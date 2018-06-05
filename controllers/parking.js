@@ -95,7 +95,7 @@ module.exports = {
                     model: ParkingImage,
                     // as: 'ParkingImages',
                     // where: { parkingId: req.params.id },
-                    // required: true,
+                    // required: true, -- inner join (false is left join)
                 },
                 {
                     model: ParkingPrice,
