@@ -20,7 +20,7 @@
     "use_env_variable": false
   },
   "production": {
-    "username": "placecar#2018",
+    "username": "placecar",
     "password": "placecar#2018",
     "database": "placecar",
     "host": "35.184.247.52",
