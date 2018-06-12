@@ -21,6 +21,10 @@ module.exports = {
       owner: {
         type: Sequelize.STRING(50),
       },
+      photoUrl: {
+        field: 'photo_url',
+        type: Sequelize.TEXT('long'),
+      },
       cityId: {
         allowNull: false,
         field: 'city_id',

@@ -11,7 +11,11 @@ module.exports = {
       name: {
         allowNull: false,
         type: Sequelize.STRING(50),
-      }
+      },
+      photoUrl: {
+        field: 'photo_url',
+        type: Sequelize.TEXT('long'),
+      },
     });
   },
   down: (queryInterface, Sequelize) => {

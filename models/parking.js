@@ -5,6 +5,10 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.TEXT,
     document: DataTypes.STRING,
     owner: DataTypes.STRING,
+    photoUrl: {
+      field: 'photo_url',
+      type: DataTypes.TEXT,
+    },
     cityId:  {
       field: 'city_id',
       type: DataTypes.INTEGER,

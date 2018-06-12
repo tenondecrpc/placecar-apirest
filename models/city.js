@@ -2,6 +2,10 @@
 module.exports = (sequelize, DataTypes) => {
   var City = sequelize.define('City', {
     name: DataTypes.STRING,
+    photoUrl: {
+      field: 'photo_url',
+      type: DataTypes.TEXT,
+    },
   }, 
   {
     timestamps: false,
