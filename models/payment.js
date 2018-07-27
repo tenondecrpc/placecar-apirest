@@ -1,26 +1,24 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var Reservation = sequelize.define('Reservation', {
-    parkingId: {
-      field: 'parking_id',
+  var Payment = sequelize.define('Payment', {
+    reservationId: {
+      field: 'reservation_id',
       type: DataTypes.INTEGER,
     },
-    userId: {
-      field: 'user_id',
+    paymentMethodId: {
+      field: 'payment_method_id',
       type: DataTypes.INTEGER,
     },
-    //TIPO
-    //CANTIDAD
     price: DataTypes.DECIMAL,
     timeStamp: {
       field: 'time_stamp',
       type: DataTypes.DATE,
-    },
+    }
   }, 
   {
     timestamps: false,
-    tableName: 'reservations',
+    tableName: 'payments',
   });
-  Reservation.associate = function(models) {};
-  return Reservation;
+  Payment.associate = function(models) {};
+  return Payment;
 };

@@ -34,6 +34,9 @@ sequelize model:generate --name ParkingComment --attributes parkingId:integer,us
 //Generation of model/migration for parkings images
 sequelize model:generate --name ParkingImage --attributes parkingId:integer,imageUrl:string
 
+//Generation of model/migration for payment
+sequelize model:generate --name Payment --attributes reservationId:integer,paymentMethodId:integer,price:decimal,timeStamp:date
+
 OTHER COMMANDS SEQUELIZE
 sequelize db:migrate --env production 
 

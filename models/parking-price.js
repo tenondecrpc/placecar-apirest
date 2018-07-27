@@ -6,8 +6,9 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
     },
     price: DataTypes.DECIMAL,
-    quantityHour: {
-      field: 'quantity_hour',
+    type: DataTypes.STRING,//REVISAR IMPACTO (HORA, DIA, SEMANA, QUINCENAL, MES, Anho)
+    quantity: {
+      field: 'quantity',
       type: DataTypes.DECIMAL,
     }
   }, 
