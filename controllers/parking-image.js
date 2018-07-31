@@ -1,7 +1,4 @@
 ParkingImage = require('../models').ParkingImage;
-var jwt = require('jsonwebtoken');
-var env       = process.env.NODE_ENV || 'development';
-var config    = require(__dirname + '/../config/config.json')[env];
 
 module.exports = {
     //Get all

@@ -3,10 +3,6 @@ ParkingImage = require('../models').ParkingImage;
 ParkingPrice = require('../models').ParkingPrice;
 ParkingComment = require('../models').ParkingComment;
 ParkingRating = require('../models').ParkingRating;
-var jwt = require('jsonwebtoken');
-var env       = process.env.NODE_ENV || 'development';
-var config    = require(__dirname + '/../config/config.json')[env];
-var sequelize = require('sequelize');
 
 module.exports = {
     //Get all
