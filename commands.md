@@ -70,3 +70,8 @@ create: ssh-keygen -t rsa -f ~/.ssh/placecar-ssh-key -C premiumsystemspy
 view: cat ~/.ssh/placecar-ssh-key
 falta la forma de cargar en google cloud la clave
 access remote: ssh -i ~/.ssh/placecar-ssh-key premiumsystemspy@35.199.67.158
+
+PAYMENT METHODS
+https://www.pagopar.com
+https://www.2checkout.com/
+https://www.bancard.com.py/
