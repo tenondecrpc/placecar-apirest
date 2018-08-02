@@ -32,7 +32,7 @@ module.exports = {
       },
       address: {
         allowNull: false,
-        type: Sequelize.STRING(50),
+        type: Sequelize.STRING(100),
       },
       latitude: {
         type: Sequelize.STRING(50),

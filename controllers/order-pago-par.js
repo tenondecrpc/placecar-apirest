@@ -1,8 +1,10 @@
+var crypto = require('crypto')
+var request = require('request');
+//SIN EFECTO POR AHORA, SE USA RESERVATION
 module.exports = {
     //Order
     orderNew(req, res) {
         //Data
-        var crypto = require('crypto')
         var shasum = crypto.createHash('sha1');
         shasum.update('24431c83a662c88fbfbac898983155da' + '3' + '5000');
         var token = shasum.digest('hex');
@@ -46,8 +48,6 @@ module.exports = {
             "descripcion_resumen": ""
           };
           //Post
-          var request = require('request');
-
           request({
             url: "https://api.pagopar.com/api/comercios/1.1/iniciar-transaccion",
             method: "POST",

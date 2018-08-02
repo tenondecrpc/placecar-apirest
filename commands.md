@@ -54,7 +54,6 @@ export use_env_variable=true
 export secret=secret
 export PORT=3000
 export NODE_ENV=development
-export TZ=GMT-4
 //Usage on nodejs api
 process.env.PORT
 //INSTALL AS A SERVICE
