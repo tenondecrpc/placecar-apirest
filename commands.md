@@ -73,3 +73,8 @@ access remote: ssh -i ~/.ssh/placecar-ssh-key premiumsystemspy@35.199.67.158
 
 CONSULTING FOR CEDULA
 https://servicios.set.gov.py/eset-publico/ciudadano/recuperar?cedula=4175744
+
+PAYMENT METHODS
+https://www.pagopar.com
+https://www.2checkout.com/
+https://www.bancard.com.py/
