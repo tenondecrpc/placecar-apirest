@@ -23,6 +23,7 @@ module.exports = {
     },
     //Create
     create(req, res) {
+        console.log(req.body.startDate)
         Reservation.create(req.body)
         .then(function(result) {
             res.status(200).send(result);

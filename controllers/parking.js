@@ -112,7 +112,7 @@ module.exports = {
             },
         })
         .then(function(result) {
-            res.status(200).json(result);
+            res.status(200).json(result[0]);
         })
         .catch(function(err) {
             res.status(500).json(err);

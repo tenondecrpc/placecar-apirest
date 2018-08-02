@@ -13,15 +13,19 @@ module.exports = {
         field: 'parking_id',
         type: Sequelize.INTEGER(10),
       },
+      type: {
+        allowNull: false,
+        type: Sequelize.INTEGER(10),
+      },
+      quantity: {
+        allowNull: false,
+        field: 'quantity',
+        type: Sequelize.DECIMAL(20,2),
+      },
       price: {
         allowNull: false,
         type: Sequelize.DECIMAL(20,2),
       },
-      quantityHour: {
-        allowNull: false,
-        field: 'quantity_hour',
-        type: Sequelize.DECIMAL(20,2),
-      }
     });
   },
   down: (queryInterface, Sequelize) => {
