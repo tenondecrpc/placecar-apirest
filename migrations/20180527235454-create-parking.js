@@ -30,6 +30,10 @@ module.exports = {
         field: 'city_id',
         type: Sequelize.INTEGER(10),
       },
+      address: {
+        allowNull: false,
+        type: Sequelize.STRING(50),
+      },
       latitude: {
         type: Sequelize.STRING(50),
       },

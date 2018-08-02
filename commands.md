@@ -17,13 +17,13 @@ sequelize model:generate --name User --attributes name:string,email:string,passw
 sequelize model:generate --name City --attributes name:string
 
 //Generation of model/migration for parking
-sequelize model:generate --name Parking --attributes name:string,description:text,document:string,owner:string,cityId:integer,latitude:string,longitude:string
+sequelize model:generate --name Parking --attributes name:string,description:text,document:string,owner:string,cityId:integer,address:string,latitude:string,longitude:string
 
 //Generation of model/migration for reservation
 sequelize model:generate --name Reservation --attributes parkingId:integer,userId:integer,type:string, quantity:decimal,price:decimal,timeStamp:date
 
 //Generation of model/migration for parkings prices
-sequelize model:generate --name ParkingPrice --attributes parkingId:integer,price:decimal,quantityHour:decimal
+sequelize model:generate --name ParkingPrice --attributes parkingId:integer,type:integer,quantity:decimal,price:decimal
 
 //Generation of model/migration for parkings ratings
 sequelize model:generate --name ParkingRating --attributes parkingId:integer,userId:integer,rating:decimal,timeStamp:date

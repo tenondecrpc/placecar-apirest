@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       field: 'city_id',
       type: DataTypes.INTEGER,
     },
+    address: DataTypes.STRING,
     latitude: DataTypes.STRING,
     longitude: DataTypes.STRING,
   }, 
