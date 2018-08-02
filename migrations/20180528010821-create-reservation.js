@@ -18,6 +18,18 @@ module.exports = {
         allowNull: false,
         type: Sequelize.INTEGER(10)
       },
+      startDate: {
+        allowNull: false,
+        defaultValue: Sequelize.fn('NOW'),
+        field: 'start_date',
+        type: Sequelize.DATE
+      },
+      endDate: {
+        allowNull: false,
+        defaultValue: Sequelize.fn('NOW'),
+        field: 'end_date',
+        type: Sequelize.DATE
+      },
       price: {
         allowNull: false,
         type: Sequelize.DECIMAL(20,2)

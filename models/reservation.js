@@ -9,8 +9,14 @@ module.exports = (sequelize, DataTypes) => {
       field: 'user_id',
       type: DataTypes.INTEGER,
     },
-    //TIPO
-    //CANTIDAD
+    startDate: {
+      field: 'start_date',
+      type: DataTypes.DATE,
+    },
+    endDate: {
+      field: 'end_date',
+      type: DataTypes.DATE,
+    },
     price: DataTypes.DECIMAL,
     timeStamp: {
       field: 'time_stamp',
