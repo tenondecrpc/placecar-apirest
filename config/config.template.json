@@ -1,12 +1,12 @@
 {
   "development": {
     "username": "root",
-    "password": "admin",
+    "password": null,
     "database": "database_development",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "port": "3306",
-    "secret": "secret",
+    "secret": "",
     "use_env_variable": false
   },
   "test": {
@@ -16,17 +16,17 @@
     "host": "127.0.0.1",
     "dialect": "mysql",
     "port": "3306",
-    "secret": "secret",
+    "secret": "",
     "use_env_variable": false
   },
   "production": {
-    "username": "placecar",
-    "password": "placecar#2018",
-    "database": "placecar",
-    "host": "35.184.247.52",
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
     "dialect": "mysql",
     "port": "3306",
-    "secret": "secret",
+    "secret": "",
     "use_env_variable": false
   }
 }

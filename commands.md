@@ -40,6 +40,9 @@ sequelize model:generate --name Payment --attributes reservationId:integer,payme
 OTHER COMMANDS SEQUELIZE
 sequelize db:migrate --env production 
 
+RENAME FILE IN PROJECT
+Rename file config/config.template.json to config/config.json --> npm start for verify conection
+
 COMMANDS FOR THE CREATION OF GLOBAL VARIABLES IN NODEJS
 //Location
 sudo nano /etc/profile
@@ -56,6 +59,7 @@ export PORT=3000
 export NODE_ENV=development
 //Usage on nodejs api
 process.env.PORT
+
 //INSTALL AS A SERVICE
 npm install -g forever forever-service
 sudo forever-service install placecar-api --script index.js -e "NODE_ENV=production PORT=3000" --start
@@ -65,16 +69,10 @@ Stop    - "sudo service placecar-api stop"
 Status  - "sudo service placecar-api status"
 Restart - "sudo service placecar-api restart"*/
 
-CONNECTION SSH
-create: ssh-keygen -t rsa -f ~/.ssh/placecar-ssh-key -C premiumsystemspy
-view: cat ~/.ssh/placecar-ssh-key
-falta la forma de cargar en google cloud la clave
-access remote: ssh -i ~/.ssh/placecar-ssh-key premiumsystemspy@35.199.67.158
-
 CONSULTING FOR CEDULA
 https://servicios.set.gov.py/eset-publico/ciudadano/recuperar?cedula=4175744
 
 PAYMENT METHODS
 https://www.pagopar.com
-https://www.2checkout.com/
 https://www.bancard.com.py/
+https://www.2checkout.com/
