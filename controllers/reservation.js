@@ -67,7 +67,7 @@ module.exports = {
                     "vendedor_direccion_coordenadas": ""
                 }
                 ],
-                "fecha_maxima_pago": "2018-09-01 14:14:00",
+                "fecha_maxima_pago": "2018-12-31 14:14:00",
                 "id_pedido_comercio": result.id,
                 "descripcion_resumen": ""
             };

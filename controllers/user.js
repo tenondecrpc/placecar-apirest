@@ -94,7 +94,6 @@ module.exports = {
                         // expiresIn: 86400 // expires in 24 hours
                         expiresIn: 2592000 // expires in 30 days
                     });
-        
                     // return the information including token as JSON
                     res.status(200).send({ auth: true, token: token });
                 } else {
